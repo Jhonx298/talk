@@ -1,24 +1,54 @@
-# README
+# テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users テーブル
 
-Things you may want to cover:
+| Column             | Type   | Options     |
+| ------------------ | ------ | ----------- |
+| nickname           | string | null: false |
+| profile            | string | null: false |
+| email              | string | null: false |
+| encrypted_password | string | null: false |
 
-* Ruby version
+### Association
 
-* System dependencies
+- has_many :theme_users
+- has_many :themes, through: :room_users
+- has_many :messages
 
-* Configuration
+## theme テーブル
 
-* Database creation
+| Column     | Type   | Options     |
+| ---------- | ------ | ----------- |
+| theme_name | string | null: false |
+| comment    | string | null: false |
 
-* Database initialization
+### Association
 
-* How to run the test suite
+- has_many :theme_users
+- has_many :users, through: :theme_users
+- has_many :messages
 
-* Services (job queues, cache servers, search engines, etc.)
+## theme_users テーブル
 
-* Deployment instructions
+| Column | Type       | Options                        |
+| ------ | ---------- | ------------------------------ |
+| user   | references | null: false, foreign_key: true |
+| theme  | references | null: false, foreign_key: true |
 
-* ...
+### Association
+
+- belongs_to :theme
+- belongs_to :user
+
+## messages テーブル
+
+| Column  | Type       |Options                        |
+| ------- | ---------- |------------------------------ |
+| content | string     |                               |
+| user    | references | null: false, foreign_key:true |
+| theme   | references | null: false, foreign_key:true |
+
+### Association
+
+- belongs_to :theme
+- belongs_to :user
