@@ -120,6 +120,7 @@ li {
   margin-bottom: 10px;
   height: calc(100vh - 170px);
   overflow: scroll;
+  overflow-x: hidden;
 }
 
 .left_theme {
@@ -265,6 +266,7 @@ li {
 .right_form {
   height: calc(100vh - 140px);
   overflow: scroll;
+  overflow-x: hidden;
 }
 
 .right_user_form {
