@@ -1,0 +1,290 @@
+// Place all the styles related to the messages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// ヘッダー
+.header {
+  background-color: #43c1ae;
+}
+
+.top-header {
+  height: 60px;
+  padding: 0 10px;
+}
+
+.nav {
+  line-height: 60px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_left {
+  display: flex;
+}
+
+.search-input {
+  border: 1px solid rgb(132, 132, 132);
+  height: 30px;
+}
+
+.search-btn {
+  border: 1px solid #8f8f8f;
+  color: #4a4a4a;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.logo {
+  margin: 5px 5px 0 0;
+  height: 50px;
+  width: 100px;
+}
+
+.user_nav {
+  display: flex;
+}
+
+.top_user_name a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+.grid-6 {
+  margin-left: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.grid-6 a {
+  font-size: 15px;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: 1px solid #fafafa;
+}
+
+
+// メイン
+.wrapper {
+  height: calc(100vh - 60px);
+  display: flex;
+  background-color: #fcfcfc;
+}
+
+
+// 左メニュー
+.left_bar {
+  height: 100%;
+  width: 20%;
+  background-color: #e1f6f3;
+  padding: 10px;
+}
+
+.top_left_bar {
+  height: 40px;
+  background-color: #b9e9e2;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.top-left_title {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.left_main_user {
+  padding: 0 0 0 10px;
+}
+
+.new_theme_form {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.new_theme a {
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: #43c1ae;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.left_user_form {
+  margin-bottom: 10px;
+  height: calc(100vh - 170px);
+  overflow: scroll;
+}
+
+.left_theme {
+  padding: 20px 0;
+}
+
+.left_theme a {
+  text-decoration: none;
+  color: rgb(38, 38, 38);
+  margin-bottom: 30px;
+}
+
+
+// 真ん中メニュー
+.main_chat {
+  height: 100%;
+  width: 60%;
+  background-color: #f6f6f6;
+}
+
+.theme_main {
+  height: 125px;
+  padding: 10px;
+  background-color: #e1f6f3;
+}
+
+.top_theme_main {
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 1px 0 5px 1px #dfdfdf;
+}
+
+.top-theme_title {
+  width: 100%;
+  padding: 10px 5px 5px 5px;
+  font-size: 18px;
+  text-align: center;
+  color: #353535;
+}
+
+.top-content_title {
+  width: 100%;
+  padding: 5px 10px 5px 10px;
+  font-size: 15px;
+  text-align: center;
+  color: #353535;
+}
+
+.main_form {
+  height: calc( 100% - 125px);
+  padding: 0 10px 10px 10px;
+  background-color: #e1f6f3;
+}
+
+.chat_form {
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 1px 0 5px 1px #dfdfdf;
+  padding: 0 20px 10px 20px;
+}
+
+.message-form {
+  height: 90%;
+}
+
+.main-input {
+  display: flex;
+}
+
+.form-input {
+  height: 10%;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  border: 1px solid #43c1ae;
+  border-radius: 10px;
+}
+
+.form-image {
+  font-size: 15px;
+  background-color: #b9e9e2;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 5px 5px 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.form-message {
+  height: 50px;
+  border: none;
+  width: 100%;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+.form-submit {
+  height: 50px;
+  font-size: 16px;
+  background-color: #43c1ae;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 0 15px;
+  margin-left: 15px;
+  border-radius: 30px;
+}
+
+// 右メニュー
+.right_bar {
+  height: 100%;
+  width: 20%;
+  background-color: #e1f6f3;
+  padding: 10px;
+}
+
+.top_right_bar {
+  height: 40px;
+  background-color: #b9e9e2;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.top-right_title {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.right_main_user {
+  padding: 0 0 0 50px;
+}
+
+.right_form {
+  height: calc(100vh - 140px);
+  overflow: scroll;
+}
+
+.right_user_form {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.right_pic {
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  background-color: #43c1ae;
+  margin-right: 10px;
+}
+
+.right_user {
+  margin-top: 5px;
+}
+
+.right_user a {
+  text-decoration: none;
+  color: black;
+}
