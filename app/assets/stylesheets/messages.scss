@@ -152,6 +152,7 @@ li {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 1px 0 5px 1px #dfdfdf;
+  overflow-x: hidden;
 }
 
 .top-theme_title {
@@ -167,7 +168,7 @@ li {
   padding: 5px 10px 5px 10px;
   font-size: 15px;
   text-align: center;
-  color: #353535;
+  color: #565656;
 }
 
 .main_form {
@@ -181,14 +182,77 @@ li {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 1px 0 5px 1px #dfdfdf;
-  padding: 0 20px 10px 20px;
+  padding: 10px 10px 10px 10px;
 }
 
-.message-form {
+.message {
   height: 90%;
+  padding: 0 5px 0 5px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.message::-webkit-scrollbar { 
+  display: none;
+}
+
+.upper-message {
+  display: flex;
+}
+
+.message-user {
+  font-size: 16px;
+  color: #434A54;
+}
+
+.message-date {
+  color: #999;
+  padding-left: 10px;
+  font-size: 12px
+}
+
+.lower-message{
+  margin-top: 10px;
+  width: 50%;
+}
+
+.message-content {
+  font-size: 14px;
+  color: #434A54;
+  margin: 0 0 10px 20px;
+  background-color: #b5ffd1;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.current-message_form {
+  text-align: right;
+}
+
+.current-upper_message {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.current-lower_message {
+  width: 50%;
+  margin-left: 50%;
+  margin-top: 10px;
+}
+
+.current-message_content {
+  font-size: 14px;
+  color: #434A54;
+  margin: 0 20px 10px 0;
+  background-color: #b5ffd1;
+  padding: 10px;
+  text-align: left;
+  border-radius: 20px;
 }
 
 .main-input {
+  margin-top: 10px;
   display: flex;
 }
 
@@ -235,6 +299,8 @@ li {
   margin-left: 15px;
   border-radius: 30px;
 }
+
+
 
 // 右メニュー
 .right_bar {
