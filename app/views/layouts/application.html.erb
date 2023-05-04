@@ -10,28 +10,6 @@
   </head>
 
   <body>
-    <div class="header">
-      <div class="top-header">
-        <div class="nav">
-          <div class="nav_left">
-            <%= link_to image_tag("talk2.png", class: :logo), root_path %>
-              <%= form_with(url: "", local: true, method: :get, class: "search-form") do |form| %>
-              <%= form.text_field :keyword, placeholder: "テーマを探す", class: "search-input" %>
-              <%= form.submit "検索", class: "search-btn" %>
-            <% end %>
-          </div>
-
-          <div class="user_nav">
-            <div class="top_user_name"><%= link_to "ユーザーネーム", "/" %></div>
-              <div class="grid-6">
-                <%= link_to "ログイン", "/" %>
-                <%= link_to "新規登録", "/" %>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
     <%= yield %>
   </body>
 </html>
