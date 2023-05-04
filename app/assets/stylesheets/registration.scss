@@ -1,0 +1,68 @@
+// Place all the styles related to the messages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.registration-main {
+  height: 100vh;
+  background-image: image-url('register1.jpg');
+  background-size:cover;
+  display: flex;
+}
+
+.register-content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.left-register_image {
+  margin-top: 310px;
+  margin-left: 60px;
+  height: 300px;
+}
+
+.registration-form_main {
+  width: 50%;
+  height: 100%;
+  padding: 150px 100px 100px 100px;
+}
+
+.sessison-form_main {
+  width: 50%;
+  height: 100%;
+  padding: 220px 100px 100px 100px;
+}
+
+.error-message {
+  height:  100px;
+  width: 100%;
+  text-align: center;
+}
+
+.registration-form_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.field input{
+  height: 40px;
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.field {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.actions input {
+  background-color: #4bffe4;
+  margin-left: 140px;
+  margin-bottom: 20px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+}
