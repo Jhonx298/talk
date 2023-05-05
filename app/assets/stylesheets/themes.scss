@@ -1,0 +1,71 @@
+// Place all the styles related to the themes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.chat-room-form {
+  width: 980px;
+  margin: 100px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border: 1px solid #43c1ae;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.chat-room-form h1{
+  text-align: center;
+}
+
+.chat-room-form__label {
+  display: block;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.chat-room-form__input {
+  width: 80%;
+  line-height: 30px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.chat-room-form__text {
+  width: 80%;
+  line-height: 30px;
+  height: 300px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+.chat-room-form__action-btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 12px 20px;
+  color: #fff;
+  background-color: #49d2bd;
+  border: 0;
+  border-radius: 5px;
+  width: 80%;
+}
+.chat-room-form__field {
+  margin-top: 30px;
+  text-align: center;
+}
+.chat-room-form__field:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.chat-room-form__field--left {
+  width: 30%;
+  padding-right: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+
+
