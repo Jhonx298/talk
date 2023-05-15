@@ -11,7 +11,7 @@
 
       <% if user_signed_in? %>
       <div class="user_nav">
-        <div class="top_user_name"><%= link_to "ユーザーネーム", "/" %></div>
+        <div class="top_user_name"><strong><%= link_to current_user.nickname, "/" %></strong></div>
           <div class="grid-6">
             <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
           </div>

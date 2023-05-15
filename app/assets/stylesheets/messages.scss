@@ -1,9 +1,20 @@
 // Place all the styles related to the messages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
 * {
   box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+li,
+h1,
+h2,
+p,
+div {
+  margin: 0;
+  padding: 0;
 }
 
 // ヘッダー
@@ -53,6 +64,7 @@
 .top_user_name a {
   text-decoration: none;
   color: #4a4a4a;
+  margin-right: 10px;
 }
 
 .grid-6 {
@@ -77,7 +89,7 @@ li {
 .wrapper {
   height: calc(100vh - 60px);
   display: flex;
-  background-color: #fcfcfc;
+  background-color: #f4fffe;
 }
 
 
@@ -85,7 +97,6 @@ li {
 .left_bar {
   height: 100%;
   width: 20%;
-  background-color: #f4fffe;
   padding: 10px;
 }
 
@@ -143,7 +154,6 @@ li {
 .main_chat {
   height: 100%;
   width: 60%;
-  background-color: #f4fffe;
 }
 
 .theme_main {
@@ -155,7 +165,7 @@ li {
   height: 100%;
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 1px 0 5px 1px #dfdfdf;
+  box-shadow: 0px 0px 5px #85cbb1;
   overflow-x: hidden;
 }
 
@@ -188,7 +198,7 @@ li {
   height: 100%;
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 1px 0 5px 1px #dfdfdf;
+  box-shadow: 0px 0px 5px #85cbb1;
   padding: 10px 20px 10px 20px;
 }
 
@@ -314,7 +324,6 @@ li {
 .right_bar {
   height: 100%;
   width: 20%;
-  background-color: #f4fffe;
   padding: 10px;
 }
 
@@ -334,7 +343,7 @@ li {
 }
 
 .right_main_user {
-  padding: 0 0 0 50px;
+  padding: 0 0 0 20px;
 }
 
 .right_form {
@@ -344,7 +353,7 @@ li {
 }
 
 .right_user_form {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   display: flex;
 }
 

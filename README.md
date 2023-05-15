@@ -17,10 +17,10 @@
 
 ## theme テーブル
 
-| Column     | Type   | Options     |
-| ---------- | ------ | ----------- |
-| theme_name | string | null: false |
-| comment    | string | null: false |
+| Column        | Type   | Options     |
+| ------------- | ------ | ----------- |
+| theme_name    | string | null: false |
+| theme_content | string | null: false |
 
 ### Association
 
