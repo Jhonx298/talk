@@ -9,78 +9,16 @@
 
   <div class="left_main_user">
     <div class="left_user_form">
+      <% @theme.each do |theme| %>
       <div class="left_theme">
-        <%= link_to "テーマ名", "/" %>
+        <%= link_to theme.theme_name, theme_messages_path(theme) %>
       </div>
-      <div class="left_theme">
-        <%= link_to "テーマ名", "/" %>
-      </div>
-      <div class="left_theme">
-        <%= link_to "テーマ名", "/" %>
-      </div>
-      <div class="left_theme">
-        <%= link_to "テーマ名", "/" %>
-      </div>
-      <div class="left_theme">
-        <%= link_to "テーマ名", "/" %>
-      </div>
-      <div class="left_theme">
-        <%= link_to "テーマ名", "/" %>
-      </div>
-      <div class="left_theme">
-        <%= link_to "テーマ名", "/" %>
-      </div>
-      <div class="left_theme">
-        <%= link_to "テーマ名", "/" %>
-      </div>
-      <div class="left_theme">
-        <%= link_to "テーマ名", "/" %>
-      </div>
-      <div class="left_theme">
-        <%= link_to "テーマ名", "/" %>
-      </div>
-      <div class="left_theme">
-        <%= link_to "テーマ名", "/" %>
-      </div>
-      <div class="left_theme">
-        <%= link_to "テーマ名", "/" %>
-      </div>
-      <div class="left_theme">
-        <%= link_to "テーマ名", "/" %>
-      </div>
-      <div class="left_theme">
-        <%= link_to "テーマ名", "/" %>
-      </div>
-      <div class="left_theme">
-        <%= link_to "テーマ名", "/" %>
-      </div>
-      <div class="left_theme">
-        <%= link_to "テーマ名", "/" %>
-      </div>
-      <div class="left_theme">
-        <%= link_to "テーマ名", "/" %>
-      </div>
-      <div class="left_theme">
-        <%= link_to "テーマ名", "/" %>
-      </div>
-      <div class="left_theme">
-        <%= link_to "テーマ名", "/" %>
-      </div>
-      <div class="left_theme">
-        <%= link_to "テーマ名", "/" %>
-      </div>
-      <div class="left_theme">
-        <%= link_to "テーマ名", "/" %>
-      </div>
-      <div class="left_theme">
-        <%= link_to "テーマ名", "/" %>
-      </div>
-      <div class="left_theme">
-        <%= link_to "テーマ名", "/" %>
-      </div>
-      <div class="left_theme">
-        <%= link_to "テーマ名", "/" %>
-      </div>
+      <% end %>
     </div>
+    <% if @theme.empty? %>
+      <div class="left_theme">
+        <%= "ここにテーマが表示されます。" %>
+      </div>
+    <% end %>
   </div>
 </div>

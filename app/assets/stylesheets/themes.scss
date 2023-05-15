@@ -2,15 +2,29 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.theme-opacity {
+  position: relative;
+  opacity: 0.3;
+}
+
+.theme_wrapper {
+  height: calc(100vh - 60px);
+  display: flex;
+  background-color: #f4fffe;
+  opacity: 0.3;
+}
 
 .chat-room-form {
   width: 980px;
   margin: 100px auto;
   padding: 40px;
   background-color: #ffffff;
-  border: 1px solid #43c1ae;
+  border: 1px solid #6d9a93;
   border-radius: 5px;
   box-sizing: border-box;
+  position: absolute;
+  top: 60px;
+  left: 365px;
 }
 
 .chat-room-form h1{

@@ -12,7 +12,7 @@
     </div>
     <div class="registration-form_form">
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-        <h2>Sign in</h2>
+        <h2>Sign up</h2>
         <div class="field">
           <%= f.label :email, "メールアドレス" %><br />
           <%= f.email_field :email, id:"user_email", autofocus: true, autocomplete: "email" %>

@@ -10,7 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_05_01_121319) do
+ActiveRecord::Schema.define(version: 2023_05_14_074830) do
+
+  create_table "messages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "content"
+    t.bigint "user_id", null: false
+    t.bigint "theme_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["theme_id"], name: "index_messages_on_theme_id"
+    t.index ["user_id"], name: "index_messages_on_user_id"
+  end
+
+  create_table "theme_users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "theme_id", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["theme_id"], name: "index_theme_users_on_theme_id"
+    t.index ["user_id"], name: "index_theme_users_on_user_id"
+  end
+
+  create_table "themes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "theme_name", null: false
+    t.string "theme_content"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "nickname", null: false
@@ -26,4 +52,8 @@ ActiveRecord::Schema.define(version: 2023_05_01_121319) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "messages", "themes"
+  add_foreign_key "messages", "users"
+  add_foreign_key "theme_users", "themes"
+  add_foreign_key "theme_users", "users"
 end
