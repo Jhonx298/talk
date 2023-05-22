@@ -1,15 +1,16 @@
 class MessagesController < ApplicationController
   
   def index
-    @theme = Theme.order('created_at DESC')
+    @theme = Theme.find(params[:theme_id])
     @message = Message.new
+    @messages = @theme.messages.includes(:user)
   end
 
   def create
     @themes = Theme.find(params[:theme_id])
     @message = @themes.messages.new(message_params)
     if @message.save
-      redirect_to room_messages_path(@theme)
+      redirect_to theme_messages_path
     else
       @messages = @theme.messages.includes(:user)
       render :index
