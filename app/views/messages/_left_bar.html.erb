@@ -1,24 +1,8 @@
 <div class="left_bar">
   <div class="top_left_bar">
-    <div class="top-left_title">テーマ一覧</div>
+    <div class="top-left_title">テーマ一へ戻る</div>
   </div>
-
-  <div class="new_theme_form">
-    <div class="new_theme"><%= link_to "新規作成", new_theme_path %></div>
-  </div>
-
-  <div class="left_main_user">
-    <div class="left_user_form">
-      <% @theme.each do |theme| %>
-      <div class="left_theme">
-        <%= link_to theme.theme_name, theme_messages_path(theme) %>
-      </div>
-      <% end %>
-    </div>
-    <% if @theme.empty? %>
-      <div class="left_theme">
-        <%= "ここにテーマが表示されます。" %>
-      </div>
-    <% end %>
+  <div class="message_top_left_bar">
+    <%= link_to image_tag("back_botton.png", class: :message_left_logo), root_path %>
   </div>
 </div>

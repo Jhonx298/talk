@@ -5,78 +5,12 @@
 
   <div class="right_main_user">
     <div class="right_form">
+      <% @messages.each do |message| %>
       <div class="right_user_form">
         <div class="right_pic"></div>
-        <div class="right_user"><%= link_to "ユーザー名", "/" %></div>
+        <div class="right_user"><%= link_to message.user.nickname, "/" %></div>
       </div>
-      <div class="right_user_form">
-        <div class="right_pic"></div>
-        <div class="right_user"><%= link_to "ユーザー名", "/" %></div>
-      </div>
-      <div class="right_user_form">
-        <div class="right_pic"></div>
-        <div class="right_user"><%= link_to "ユーザー名", "/" %></div>
-      </div>
-      <div class="right_user_form">
-        <div class="right_pic"></div>
-        <div class="right_user"><%= link_to "ユーザー名", "/" %></div>
-      </div>
-      <div class="right_user_form">
-        <div class="right_pic"></div>
-        <div class="right_user"><%= link_to "ユーザー名", "/" %></div>
-      </div>
-      <div class="right_user_form">
-        <div class="right_pic"></div>
-        <div class="right_user"><%= link_to "ユーザー名", "/" %></div>
-      </div>
-      <div class="right_user_form">
-        <div class="right_pic"></div>
-        <div class="right_user"><%= link_to "ユーザー名", "/" %></div>
-      </div>
-      <div class="right_user_form">
-        <div class="right_pic"></div>
-        <div class="right_user"><%= link_to "ユーザー名", "/" %></div>
-      </div>
-      <div class="right_user_form">
-        <div class="right_pic"></div>
-        <div class="right_user"><%= link_to "ユーザー名", "/" %></div>
-      </div>
-      <div class="right_user_form">
-        <div class="right_pic"></div>
-        <div class="right_user"><%= link_to "ユーザー名", "/" %></div>
-      </div>
-      <div class="right_user_form">
-        <div class="right_pic"></div>
-        <div class="right_user"><%= link_to "ユーザー名", "/" %></div>
-      </div>
-      <div class="right_user_form">
-        <div class="right_pic"></div>
-        <div class="right_user"><%= link_to "ユーザー名", "/" %></div>
-      </div>
-      <div class="right_user_form">
-        <div class="right_pic"></div>
-        <div class="right_user"><%= link_to "ユーザー名", "/" %></div>
-      </div>
-      <div class="right_user_form">
-        <div class="right_pic"></div>
-        <div class="right_user"><%= link_to "ユーザー名", "/" %></div>
-      </div>
-      <div class="right_user_form">
-        <div class="right_pic"></div>
-        <div class="right_user"><%= link_to "ユーザー名", "/" %></div>
-      </div>
-      <div class="right_user_form">
-        <div class="right_pic"></div>
-        <div class="right_user"><%= link_to "ユーザー名", "/" %></div>
-      </div>
-      <div class="right_user_form">
-        <div class="right_pic"></div>
-        <div class="right_user"><%= link_to "ユーザー名", "/" %></div>
-      </div>
-      <div class="right_user_form">
-        <div class="right_pic"></div>
-        <div class="right_user"><%= link_to "ユーザー名", "/" %></div>
-      </div>
+      <% end %>
     </div>
   </div>
 </div>

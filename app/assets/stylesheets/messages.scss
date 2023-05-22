@@ -149,6 +149,23 @@ li {
   margin-bottom: 30px;
 }
 
+.message_top_left_bar {
+  height: calc( 100% - 65px);
+  background-color: #b1ece3;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message_left_logo {
+  height: 300px;
+  width: 150px;
+}
+
+
 
 // 真ん中メニュー
 .main_chat {

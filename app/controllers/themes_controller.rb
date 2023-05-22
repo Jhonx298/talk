@@ -2,6 +2,7 @@ class ThemesController < ApplicationController
   before_action :authenticate_user!
 
   def index
+    @theme = Theme.order('created_at DESC')
   end
 
   def new
