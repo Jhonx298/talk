@@ -180,7 +180,7 @@ li {
 // 真ん中メニュー
 .main_chat {
   height: 100%;
-  width: 80%;
+  width: 60%;
 }
 
 .theme_main {
@@ -264,7 +264,7 @@ li {
 }
 
 .message-content {
-  display: inline;
+  display: inline-block;
   font-size: 16px;
   color: #434A54;
   margin: 0 0 10px 35px;
@@ -272,6 +272,15 @@ li {
   padding: 10px;
   border-radius: 20px;
 }
+
+.message-image {
+  color: #434A54;
+  margin: 0 0 10px 35px;
+  background-color: #b5ffd1;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 
 .current-message_form {
   text-align: right;
