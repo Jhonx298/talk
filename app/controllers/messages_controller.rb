@@ -4,6 +4,11 @@ class MessagesController < ApplicationController
     @theme = Theme.find(params[:theme_id])
     @message = Message.new
     @messages = @theme.messages.includes(:user)
+    @user = @theme.messages.select(:user_id).distinct.includes(:user)
+  end
+
+  def show
+  
   end
 
   def create

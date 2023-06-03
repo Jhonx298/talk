@@ -5,11 +5,13 @@
 
   <div class="right_main_user">
     <div class="right_form">
-      <% @messages.each do |message| %>
+      <% @messages.distinct.each do |message| %>
+      <!-- <% if message.user.nickname %> -->
       <div class="right_user_form">
         <div class="right_pic"></div>
         <div class="right_user"><%= link_to message.user.nickname, "/" %></div>
       </div>
+      <% end %>
       <% end %>
     </div>
   </div>
