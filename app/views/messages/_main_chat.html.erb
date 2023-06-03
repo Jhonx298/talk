@@ -22,13 +22,13 @@
             <div class="message-date">
               <%= message.created_at %>
             </div>
+        </div>
+        <div class="lower-message">
+          <div class="message-content">
+            <%= message.content %>
           </div>
-          <div class="lower-message">
-            <div class="message-content">
-              <%= message.content %>
-            </div>
-            <%#<%= image_tag @messages.image.variant(resize: '500x500'), class: 'message-image' if message.image.attached? %>
-          </div>
+          <%#<%= image_tag @messages.image.variant(resize: '500x500'), class: 'message-image' if message.image.attached? %>
+        </div>
         <% end %>
       </div>
 
