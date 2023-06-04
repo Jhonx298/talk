@@ -4,6 +4,7 @@ class MessagesController < ApplicationController
     @theme = Theme.find(params[:theme_id])
     @message = Message.new
     @messages = @theme.messages.includes(:user)
+    @themes = Theme.search(params[:keyword])
   end
 
   def show

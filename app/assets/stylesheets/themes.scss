@@ -15,7 +15,7 @@
   margin: 100px auto;
   padding: 40px;
   background-color: #ffffff;
-  border: 1px solid #6d9a93;
+  border: 1px solid #49d2bd;
   border-radius: 5px;
   box-sizing: border-box;
   position: absolute;
@@ -75,6 +75,30 @@
   padding-right: 20px;
   padding-left: 20px;
   box-sizing: border-box;
+}
+
+.search-main {
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  border: 1px solid rgb(132, 132, 132);
+  height: 50px;
+  border-radius: 5px;
+  padding-left: 10px;
+  width: 500px;
+}
+
+.search-btn {
+  border: 1px solid #ffffff;
+  color: #f8f8f8;
+  background-color: #43c1ae;
+  height: 50px;
+  width: 60px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 
