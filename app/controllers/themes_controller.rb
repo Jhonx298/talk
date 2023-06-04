@@ -18,6 +18,10 @@ class ThemesController < ApplicationController
     end
   end
 
+  def search
+    @themes = Theme.search(params[:keyword])
+  end
+
   private
   def root_params
     params.require(:theme).permit(:theme_name, :theme_content, user_ids: [])

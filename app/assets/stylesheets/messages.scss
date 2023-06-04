@@ -39,18 +39,6 @@ div {
   display: flex;
 }
 
-.search-input {
-  border: 1px solid rgb(132, 132, 132);
-  height: 30px;
-}
-
-.search-btn {
-  border: 1px solid #8f8f8f;
-  color: #4a4a4a;
-  height: 30px;
-  border-radius: 5px;
-}
-
 .logo {
   margin: 5px 5px 0 0;
   height: 50px;
@@ -111,7 +99,7 @@ li {
   background-color: #b9e9e2;
   padding: 10px;
   border-radius: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .top-left_title {
@@ -151,11 +139,12 @@ li {
 
 .left_theme {
   padding: 20px 0;
+  font-size: 20px;
 }
 
 .left_theme a {
   text-decoration: none;
-  color: rgb(38, 38, 38);
+  color: rgb(91, 91, 91);
   margin-bottom: 30px;
 }
 

@@ -4,5 +4,8 @@ Rails.application.routes.draw do
 
   resources :themes, only: [:new, :create] do
     resources :messages, only: [:index, :create]
+    collection do
+      get 'search'
+    end
   end
 end
