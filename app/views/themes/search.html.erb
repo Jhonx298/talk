@@ -17,10 +17,11 @@
 
     <div class="left_main_user">
       <div class="left_user_form">
+        <div class="search-result">検索結果</div>
         <% @themes.each do |theme| %>
-        <div class="left_theme">
-          <%= link_to theme.theme_name, theme_messages_path(theme) %>
-        </div>
+          <div class="left_theme">
+            <%= link_to theme.theme_name, theme_messages_path(theme) %>
+          </div>
         <% end %>
       </div>
     </div>
