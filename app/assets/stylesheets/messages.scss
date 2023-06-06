@@ -55,6 +55,10 @@ div {
   margin-right: 10px;
 }
 
+.top_user_name a:hover {
+  color: #ffffff;
+}
+
 .grid-6 {
   margin-left: 20px;
 }
@@ -70,6 +74,10 @@ li {
   color: rgb(255, 255, 255);
   border-radius: 5px;
   border: 1px solid #fafafa;
+}
+
+.grid-6 a:hover {
+  background-color: #4fddc8;
 }
 
 
@@ -127,6 +135,10 @@ li {
   font-size: 20px;
 }
 
+.new_theme a:hover {
+  background-color: #4ee2cc;
+}
+
 .left_user_form {
   margin-bottom: 10px;
   height: calc(100vh - 170px);
@@ -142,6 +154,10 @@ li {
   font-size: 20px;
 }
 
+.left_theme a:hover {
+  color: #43c1ae;
+}
+
 .left_theme a {
   text-decoration: none;
   color: rgb(91, 91, 91);
@@ -149,19 +165,19 @@ li {
 }
 
 .message_top_left_bar {
-  height: calc( 100% - 65px);
+  height: 250px;
+  width: 250px;
   background-color: #dbf7f3;
-  padding: 10px;
-  border-radius: 15px;
-  margin-bottom: 15px;
+  border-radius: 130px;
+  margin: 280px 34.5px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .message_left_logo {
-  height: 300px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
 }
 
 
