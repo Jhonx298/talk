@@ -65,10 +65,10 @@ Talk
 https://talk-3mzf.onrender.com
 
 # テスト用アカウント
-・BASIC認証パスワード: 2222
-・BASIC認証ID: jhon
-・メールアドレス:  sample@sample.com
-・パスワード: sample1
+| ・BASIC認証パスワード: 2222          |
+| ・BASIC認証ID: jhon                |
+| ・メールアドレス:  sample@sample.com |
+| ・パスワード: sample1               |
 
 # 利用方法
 ・ログインページでログインまたは新規登録を行う。
@@ -85,11 +85,11 @@ https://docs.google.com/spreadsheets/d/1c5z_yNMwRgZYg_rqu8yK_JTGySrpYRmiXuW52DOb
 
 # ローカルでの動作方法
 以下の手順で行う↓
-・git clone https://github.com/Jhonx298/talk.git
-・cd talk
-・bundle install
-・rails db:create
-・rails db:migrate
+| ・git clone https://github.com/Jhonx298/talk.git |
+| ・cd talk                                        |
+| ・bundle install                                 |
+| ・rails db:create                                |
+| ・rails db:migrate                               |
 
 # 実装予定の機能
 ・ユーザー詳細 プロフィールページ：名前、テーマ、削除、編集、更新
