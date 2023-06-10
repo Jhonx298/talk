@@ -7,10 +7,6 @@ class MessagesController < ApplicationController
     @themes = Theme.search(params[:keyword])
   end
 
-  def show
-  
-  end
-
   def create
     @themes = Theme.find(params[:theme_id])
     @message = @themes.messages.new(message_params)
