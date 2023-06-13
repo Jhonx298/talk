@@ -10,31 +10,7 @@
   </head>
 
   <body>
-  <div class="header">
-  <div class="top-header">
-    <div class="nav">
-      <div class="nav_left">
-        <%= link_to image_tag("talk2.png", class: :logo), root_path %>
-          
-      </div>
 
-      <% if user_signed_in? %>
-      <div class="user_nav">
-        <div class="top_user_name"><strong><%= link_to current_user.nickname, "/" %></strong></div>
-          <div class="grid-6">
-            <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-          </div>
-        </div>
-      <% else %>
-        <div class="grid-6">
-          <%= link_to "ログイン", new_user_session_path %>
-          <%= link_to "新規登録", new_user_registration_path %>
-        </div>
-      <% end %>
-      </div>
-    </div>
-  </div>
-</div>
     <%= yield %>
   </body>
 </html>
